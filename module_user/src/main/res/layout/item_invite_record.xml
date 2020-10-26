@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#25262F"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginBottom="9dp"
+        android:src="@mipmap/avatar"/>
+
+
+    <TextView
+        android:id="@+id/tv_level"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R1"
+        android:textColor="#fffacc14"
+        android:layout_alignBottom="@+id/iv_avatar"
+        android:layout_alignRight="@+id/iv_avatar"
+        android:textSize="11sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#fffefefe"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10sp"
+        android:textSize="14sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:layout_below="@+id/tv_name"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:textColor="#ffffffff"
+        android:textSize="11sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_container"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="12dp"
+        android:textColor="#ffa2a6b0"
+        android:textSize="11sp"
+        android:layout_marginRight="13dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_invite_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:textColor="#ffa2ae44"
+        android:layout_marginRight="13dp"
+        android:textSize="11sp"
+        android:layout_alignParentRight="true"
+        android:drawablePadding="10dp"
+        android:drawableRight="@mipmap/ic_invite_record_arrow_right"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#161618"
+        />
+</RelativeLayout>

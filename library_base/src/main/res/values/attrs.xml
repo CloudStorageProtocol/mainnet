@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--TitleBar-->
+    <declare-styleable name="TitleBar">
+        <attr name="left_text" format="string" />
+        <attr name="left_text_color" format="color" />
+        <attr name="left_text_bold" format="boolean" />
+        <attr name="left_text_size" format="dimension" />
+
+        <attr name="title" format="string" />
+        <attr name="title_color" format="color" />
+        <attr name="title_bold" format="boolean" />
+
+        <attr name="seach_hint" format="string" />
+
+        <attr name="left_image" format="reference" />
+        <attr name="right_image" format="reference" />
+
+        <attr name="right_text" format="string" />
+        <attr name="right_text_color" format="color" />
+        <attr name="right_text_bold" format="boolean" />
+        <attr name="right_text_size" format="dimension" />
+    </declare-styleable>
+    <!--Titlebar end-->
+
+    <declare-styleable name="DigitalChangeView">
+        <attr name="defaultValue" format="integer|float" />
+    </declare-styleable>
+
+    <declare-styleable name="LoadingView">
+        <attr name="loadding_color" format="color" />
+        <attr name="ring_style" format="enum">
+            <enum name="square" value="0" />
+            <enum name="round" value="1" />
+        </attr>
+        <attr name="progress_style" format="enum">
+            <enum name="material" value="0" />
+            <enum name="linear" value="1" />
+        </attr>
+
+        <attr name="ring_width" format="dimension" />
+        <attr name="ring_radius" format="dimension" />
+    </declare-styleable>
+</resources>

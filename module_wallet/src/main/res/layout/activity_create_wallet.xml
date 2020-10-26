@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true"
+    android:background="#161618"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.andjdk.library_base.widget.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:left_image="@mipmap/back"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="创建钱包"
+            android:textColor="#ff637100"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            />
+
+
+        <EditText
+            android:id="@+id/edit_wallet_name"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="输入钱包名称"
+            android:textColor="@color/editview_text_color"
+            android:textColorHint="#666666"
+            android:textSize="18sp"
+            android:background="@null"
+            android:drawablePadding="14dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@mipmap/assets_wallet_create_name"
+            />
+
+        <View
+            style="@style/ViewLineStyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+
+        <EditText
+            android:id="@+id/edit_wallet_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="输入钱包密码"
+            android:inputType="textPassword"
+            android:textColorHint="#666666"
+            android:textColor="@color/editview_text_color"
+            android:textSize="18sp"
+            android:background="@null"
+            android:drawablePadding="14dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@mipmap/assets_wallet_create_password_1"
+            />
+
+        <View
+            style="@style/ViewLineStyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="不少于8个字符，建议字母、数字混合。"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:textColor="#ff637100"
+            android:textSize="9sp"
+            />
+
+        <EditText
+            android:id="@+id/edit_re_wallet_password"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="确认钱包密码"
+            android:inputType="textPassword"
+            android:textColorHint="#666666"
+            android:textColor="@color/editview_text_color"
+            android:textSize="18sp"
+            android:background="@null"
+            android:drawablePadding="14dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@mipmap/assets_wallet_create_password_2"
+            />
+
+        <View
+            style="@style/ViewLineStyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+        <EditText
+            android:id="@+id/edit_password_tip"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="密码提示信息"
+            android:textColorHint="#666666"
+            android:textColor="@color/editview_text_color"
+            android:textSize="18sp"
+            android:background="@null"
+            android:drawablePadding="14dp"
+            android:layout_marginLeft="15dp"
+            android:drawableLeft="@mipmap/assets_wallet_create_prompt"
+            />
+
+        <View
+            style="@style/ViewLineStyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_create_wallet"
+        style="@style/style_btn"
+        android:layout_marginTop="114dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="69dp"
+        android:text="创建"/>
+
+</FrameLayout>

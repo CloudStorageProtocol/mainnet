@@ -1,0 +1,1 @@
+include ':app', ':library_base', ':library_res', ':module_user',':module_wallet',':lib-zxing', ':library_wallet'

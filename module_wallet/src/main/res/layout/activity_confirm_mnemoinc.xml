@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#161618"
+    android:fitsSystemWindows="true">
+
+    <com.andjdk.library_base.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:left_image="@mipmap/back"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="44dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="确认助记词"
+                android:textColor="#ff637100"
+                android:textSize="30sp"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="15dp"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="请按顺序点击助记词，以确认您的身份"
+                android:textColor="#ff637200"
+                android:layout_marginTop="25dp"
+                android:layout_marginLeft="15dp"
+                android:textSize="15sp"
+                />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_world"
+                android:layout_width="match_parent"
+                android:layout_height="125dp"
+                android:layout_marginTop="29dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:background="@drawable/shape_mnemonic_bg"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_view_op_world"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                />
+        </LinearLayout>
+    </ScrollView>
+
+
+    <Button
+        android:id="@+id/btn_ok"
+        style="@style/style_btn"
+        android:enabled="false"
+        android:layout_marginBottom="69dp"
+        android:layout_gravity="bottom"
+        android:text="完成"/>
+
+</FrameLayout>

@@ -1,0 +1,27 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.uranus.library_wallet">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application>
+        <activity android:name=".ui.activity.CreateWalletActivity">
+
+        </activity>
+        <activity android:name=".ui.activity.ImportWalletActivity">
+        </activity>
+        <activity android:name=".ui.activity.ExportKeystoreActivity"></activity>
+
+        <activity android:name=".ui.activity.ManagerKeyActivity"></activity>
+
+        <activity android:name=".ui.activity.BackupWalletActivity"></activity>
+
+        <activity android:name=".ui.activity.BackupMnemoincActivity"></activity>
+        <activity android:name=".ui.activity.RollInWalletActivity"></activity>
+        <activity android:name=".ui.activity.RolloutWalletActivity"/>
+        <activity android:name=".ui.activity.ConfirmMnemoincActivity"></activity>
+        <activity android:name=".ui.activity.TransactionRecordActivity"/>
+        <activity android:name=".ui.activity.RechargeActivity"/>
+
+    </application>
+</manifest>

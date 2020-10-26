@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#161618"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.andjdk.library_base.widget.TitleBar
+            android:id="@+id/title_bar"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            app:title="提现"
+            app:left_image="@mipmap/back"
+            app:right_image="@mipmap/assets_wallet_transfer_scanning"/>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="15dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:background="#262630">
+
+            <TextView
+                android:id="@+id/tv_coin_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USDT"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="15sp"
+                />
+            <TextView
+                android:id="@+id/tv_balance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="余额："
+                android:textColor="#ffffffff"
+                android:textSize="15sp"
+                android:layout_gravity="right|center_vertical"
+                />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/edit_coin_num"
+            android:layout_width="match_parent"
+            android:layout_height="75dp"
+            android:hint="请输入金额"
+            android:textColorHint="#666666"
+            android:textColor="#666666"
+            android:paddingLeft="16dp"
+            android:maxLines="1"
+            android:textSize="30sp"
+            android:background="#262630"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:text="收款地址"
+            android:gravity="center_vertical"
+            android:paddingLeft="16dp"
+            android:background="@color/color_262630"
+            android:textColor="#fffefefe"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            />
+
+        <EditText
+            android:id="@+id/edit_address"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:hint="请输入有效的 USDT 地址"
+            android:textColorHint="@color/color_666666"
+            android:textColor="#ff666666"
+            android:paddingLeft="16dp"
+            android:textSize="15sp"
+            android:background="@color/color_262630"
+            />
+
+        <View style="@style/ViewLineStyle"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@color/color_262630"
+            android:orientation="horizontal"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="备注："
+                android:textColor="#ffffffff"
+                android:textSize="15sp"
+                />
+            <EditText
+                android:id="@+id/tv_remarks"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:hint="（选填）"
+                android:textColorHint="@color/color_666666"
+                android:textColor="#ff666666"
+                android:paddingLeft="10dp"
+                android:textSize="15sp"
+                android:background="@color/color_262630"
+                />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="#262630"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="15dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="矿工费："
+                android:layout_gravity="center_vertical"
+                android:textColor="#ffffffff"
+                android:textSize="15sp"
+                />
+
+            <TextView
+                android:id="@+id/tv_service_charge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0 ether"
+                android:textColor="#666666"
+                android:textSize="15sp"
+                android:layout_gravity="right|center_vertical"
+                />
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+
+    <Button
+        android:id="@+id/btn_sure"
+        style="@style/style_btn"
+        android:text="确认提现"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="51dp"/>
+
+</FrameLayout>

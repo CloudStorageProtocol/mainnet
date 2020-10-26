@@ -1,0 +1,4 @@
+<resources>
+    <string name="wallet_name" translatable="false">用户组件</string>
+    <string name="wallet_info" translatable="false">用户：</string>
+</resources>

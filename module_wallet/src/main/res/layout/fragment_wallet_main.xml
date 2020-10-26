@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg">
+
+    <com.andjdk.library_base.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:title="资产"/>
+
+    <androidx.coordinatorlayout.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bg">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_scrollFlags="scroll">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:layout_marginRight="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的钱包"
+                            android:textColor="#ffffffff"
+                            android:textSize="18sp"
+                            />
+                        <ImageView
+                            android:id="@+id/iv_manager"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@mipmap/assets_management"
+                            android:layout_gravity="right|center"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            />
+
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        >
+                        <LinearLayout
+                            android:id="@+id/lly_create"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_horizontal"
+                            android:background="@drawable/shape_corners_10_262630"
+                            android:paddingBottom="35dp"
+                            android:paddingTop="35dp"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginRight="15dp"
+                            android:orientation="vertical"
+                            android:visibility="visible">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="您还没有钱包！"
+                                android:textColor="#ff808080"
+                                android:textSize="16sp"
+                                />
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="25dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/tv_create_wallet"
+                                    android:layout_width="90dp"
+                                    android:layout_height="30dp"
+                                    android:text="创建钱包"
+                                    android:textColor="#ffa2ad44"
+                                    android:gravity="center"
+                                    android:textSize="16sp"
+                                    android:background="@drawable/btn_bg_white"
+                                    />
+
+                                <TextView
+                                    android:id="@+id/tv_import_wallet"
+                                    android:layout_width="90dp"
+                                    android:layout_height="30dp"
+                                    android:text="导入钱包"
+                                    android:textColor="#FEFEFE"
+                                    android:layout_marginLeft="18dp"
+                                    android:gravity="center"
+                                    android:textSize="16sp"
+                                    android:background="@drawable/btn_bg"
+                                    />
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:id="@+id/recycler_view"
+                            android:layout_width="match_parent"
+                            android:layout_height="140dp"
+                            android:visibility="gone"
+                            />
+                    </FrameLayout>
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#262630"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="15dp"
+                        android:paddingBottom="24dp"
+                        android:layout_marginBottom="29dp"
+                        android:layout_marginTop="40dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="我的收益"
+                            android:textColor="#ffffffff"
+                            android:textSize="18sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_roll_in_wallet"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="转入钱包"
+                            android:textColor="#ff637100"
+                            android:textSize="15sp"
+                            android:layout_gravity="right"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_total_income"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#ffdeea5a"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginTop="42dp"
+                            android:textSize="36sp"
+                            />
+
+                        <TextView
+                            android:id="@+id/tv_rate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="#fffbffd6"
+                            android:layout_marginTop="90dp"
+                            android:layout_gravity="center_horizontal"
+                            android:textSize="15sp"
+                            />
+
+                    </FrameLayout>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/viewpager_tab"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:background="@color/bg"
+                app:tabIndicatorColor="#FFFFFF"
+                app:tabIndicatorHeight="1dp"
+                app:tabIndicatorFullWidth="false"
+                app:tabTextColor="#808080"
+                app:tabSelectedTextColor="#FEFEFE"
+                app:tabMode="scrollable"/>
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"/>
+
+    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

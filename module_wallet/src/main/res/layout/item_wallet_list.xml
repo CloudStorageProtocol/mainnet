@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="10dp"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/lly_container"
+        android:layout_width="330dp"
+        android:layout_height="140dp"
+        android:layout_marginRight="8dp"
+        android:background="@mipmap/assets_eth_bg">
+
+        <TextView
+            android:id="@+id/tv_coin_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="18dp"
+            android:textColor="#ffffffff"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_balance"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffdeea5a"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/tv_equal_cny"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13dp"
+            android:layout_marginTop="80dp"
+            android:textColor="#fffbffd6"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/tv_roll_in"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="120dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/btn_bg_white"
+            android:drawableLeft="@mipmap/property_recharge"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="充值"
+            android:textColor="#A2AD44"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_roll_out"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="right|bottom"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/btn_bg"
+            android:drawableLeft="@mipmap/assets_transfer"
+            android:drawablePadding="8dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:paddingRight="18dp"
+            android:text="提现"
+            android:textColor="#fffefefe"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tv_recharge_recording"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="交易记录"
+            android:layout_gravity="right"
+            android:layout_marginTop="17dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffffff"
+            android:drawableLeft="@mipmap/assets_recording"
+            android:drawablePadding="5dp"
+            android:textSize="14sp"
+            />
+    </FrameLayout>
+</LinearLayout>

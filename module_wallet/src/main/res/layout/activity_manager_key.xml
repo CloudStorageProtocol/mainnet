@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#161618"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical">
+
+    <com.andjdk.library_base.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:title="管理"
+        app:left_image="@mipmap/back"/>
+
+
+    <LinearLayout
+        android:id="@+id/lly_export_mn"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/assets_wallet_m_export"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="导出助记词"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:layout_marginLeft="15dp"
+            android:drawableRight="@mipmap/ic_arrow_right"
+            android:paddingRight="20dp"
+            />
+    </LinearLayout>
+
+    <View style="@style/ViewLineStyle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/lly_export_keystore"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="15dp"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="5dp">
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@mipmap/assets_wallet_m_export"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="导出keystore"
+            android:textColor="#ffffff"
+            android:gravity="center_vertical"
+            android:textSize="16sp"
+            android:drawableRight="@mipmap/ic_arrow_right"
+            android:paddingRight="20dp"
+            android:layout_marginLeft="15dp"
+            />
+    </LinearLayout>
+
+    <View style="@style/ViewLineStyle"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"/>
+</LinearLayout>
