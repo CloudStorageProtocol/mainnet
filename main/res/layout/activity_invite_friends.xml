@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/bg"
+    android:fitsSystemWindows="true">
+    <com.andjdk.library_base.widget.TitleBar
+        android:id="@+id/title_bar"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        app:title="邀请好友"
+        app:left_image="@mipmap/back"
+        app:right_image="@mipmap/ic_invite_record"/>
+
+    <FrameLayout
+        android:id="@+id/fly_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fillViewport="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="56dp"
+                android:orientation="vertical">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_invite_title"
+                    android:layout_gravity="center_horizontal"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="URANUS，天空的原始神，是希腊神话中的希望和未来\n的象征，为世界上的每一个角落提供光明和力量"
+                    android:textColor="#ffffffff"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="19dp"
+                    android:lineSpacingExtra="5dp"
+                    android:textSize="9sp"
+                    />
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="您的专属邀请码"
+                    android:textColor="#ffffffff"
+                    android:textSize="9sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_invite_code"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="GU2410EQX"
+                    android:textColor="#ffffffff"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp"
+                    android:paddingTop="22dp"
+                    android:textSize="24sp"
+                    android:background="@mipmap/bg_invite_code"
+                    />
+
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="立即分享"
+                    android:textColor="#ffffffff"
+                    android:textSize="12sp"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="12dp"
+                    android:background="@mipmap/ic_invite_share"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="邀请好友加入泛在算力共享，获得红利"
+                    android:textColor="#ffffffff"
+                    android:textSize="12sp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="28dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="275dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:gravity="center"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="19dp"
+                    android:background="@drawable/shape_corners_5_25262f">
+
+                    <ImageView
+                        android:id="@+id/iv_qr_code"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_marginTop="27dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="好友扫码加入泛在算力共享，获得红利"
+                        android:textColor="#ffa2a6b0"
+                        android:textSize="12sp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="21dp"
+                        />
+                </LinearLayout>
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="47dp"
+                    />
+            </LinearLayout>
+        </ScrollView>
+        <ImageView
+            android:layout_width="179dp"
+            android:layout_height="204dp"
+            android:src="@mipmap/ic_invite_head"
+            android:layout_gravity="center_horizontal"
+            />
+    </FrameLayout>
+
+</LinearLayout>
